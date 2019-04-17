@@ -14,15 +14,12 @@ const initialState = {
 
 const store = createStore(reducer,initialState);
 
-
 class App extends Component {
   // constructor() {
   //   super();
-
   //   this.state = {
   //     todos : ['eat','sleep','pray','code']
   //   }
-
   // }
   
   render() {
