@@ -1,10 +1,12 @@
 import React from 'react';
 
 
-const Todo = () => {
-
+const Todo = (props) => {
+    console.log(props.todos);
     return (
-       <li>My first Todo</li>
+        <div>
+            { props.todos.map( todo => <li>{todo}</li>) }
+        </div>
     )
 }
 

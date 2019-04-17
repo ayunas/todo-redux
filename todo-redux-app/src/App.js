@@ -9,7 +9,7 @@ class App extends Component {
     super();
 
     this.state = {
-      todos : null
+      todos : ['eat','sleep','pray','code']
     }
 
   }
@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Todos />
+        <Todos todos={this.state.todos}/>
         <Footer />
       </div>
     );

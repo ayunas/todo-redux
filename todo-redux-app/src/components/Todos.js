@@ -5,7 +5,7 @@ const Todos = (props) => {
 
     return (
         <ol>
-            <Todo/>
+            <Todo todos={props.todos}/>
         </ol>
     )
 }
