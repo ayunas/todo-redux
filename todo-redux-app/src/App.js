@@ -6,13 +6,8 @@ import './App.css';
 import Header from './components/Header';
 import Todos from './components/Todos';
 import Footer from './components/Footer';
+import AddTodo from './components/AddTodo';
 
-
-const initialState = {
-  todos: ['eat','sleep','pray','code']
-}
-
-const store = createStore(reducer,initialState);
 
 class App extends Component {
   // constructor() {
@@ -26,7 +21,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Todos todos={store.getState().todos}/>
+        <Todos todos={['item1']}/>
+        <AddTodo/>
         <Footer />
       </div>
     );

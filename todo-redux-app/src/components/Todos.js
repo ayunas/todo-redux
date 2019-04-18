@@ -1,11 +1,11 @@
 import React from 'react';
-import Todo from './Todo';
+import ConnectTodo from './Todo';
 
 const Todos = (props) => {
 
     return (
         <ol>
-            <Todo todos={props.todos}/>
+            <ConnectTodo/>
         </ol>
     )
 }

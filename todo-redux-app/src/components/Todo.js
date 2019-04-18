@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 
 const Todo = (props) => {
@@ -10,5 +11,16 @@ const Todo = (props) => {
     )
 }
 
-export default Todo;
 
+const mapStateToProps = (state) => {
+    return {
+        todos : state.todos
+    }
+}
+
+
+export default connect(mapStateToProps,{})(Todo);
+
+
+//Connect is a HOC -  function that accepts a component and returns a component
+//it's an HOF that will return a function that returns an HOC
